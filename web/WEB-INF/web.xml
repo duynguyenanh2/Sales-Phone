@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>sanphamController</servlet-name>
+        <servlet-class>controller.sanphamController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartController</servlet-name>
+        <servlet-class>controller.CartController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SPController</servlet-name>
+        <servlet-class>controller.SPController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>accountController</servlet-name>
+        <servlet-class>controller.accountController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sanphamController</servlet-name>
+        <url-pattern>/sanphamController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartController</servlet-name>
+        <url-pattern>/CartController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SPController</servlet-name>
+        <url-pattern>/SPController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>accountController</servlet-name>
+        <url-pattern>/accountController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
